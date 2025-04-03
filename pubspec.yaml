@@ -1,7 +1,9 @@
 name: national_code_validator
-description: A starting point for Dart libraries or applications.
+description: A Dart library for validating Iranian National Code (کد ملی). This package implements the official validation algorithm for Iranian National Code with proper checks for length, format, and control digit.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/smilingmajid/national_code_validator
+homepage: https://github.com/smilingmajid/national_code_validator
+documentation: https://github.com/smilingmajid/national_code_validator#readme
 
 environment:
   sdk: ^3.6.2
