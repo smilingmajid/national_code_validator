@@ -11,25 +11,70 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# National Code Validator | کد ملی اعتبارسنج | Nationale Code-Validator
 
-## Features
+## 🇬🇧 English
+A Dart library for validating Iranian National Code (کد ملی).
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+### Features
+- Validates the format and mathematical algorithm of Iranian National Code
+- Checks for exact 10-digit length
+- Verifies the control digit
+- Prevents common invalid patterns (like repeated digits)
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
+### Usage
 ```dart
-const like = 'sample';
+import 'package:national_code_validator/national_code_validator.dart';
+
+void main() {
+  String nationalCode = "0123456789";
+  bool isValid = NationalCodeValidator.isValid(nationalCode);
+  print(isValid); // Returns true or false
+}
+```
+
+---
+
+## 🇩🇪 Deutsch
+Eine Dart-Bibliothek zur Validierung des iranischen Nationalkodes (کد ملی).
+
+### Funktionen
+- Validiert das Format und den mathematischen Algorithmus des iranischen Nationalkodes
+- Überprüft die genaue 10-stellige Länge
+- Verifiziert die Kontrollziffer
+- Verhindert häufige ungültige Muster (wie wiederholte Ziffern)
+
+### Verwendung
+```dart
+import 'package:national_code_validator/national_code_validator.dart';
+
+void main() {
+  String nationalCode = "0123456789";
+  bool isValid = NationalCodeValidator.isValid(nationalCode);
+  print(isValid); // Gibt true oder false zurück
+}
+```
+
+---
+
+## 🇮🇷 فارسی
+یک کتابخانه Dart برای اعتبارسنجی کد ملی ایرانی.
+
+### ویژگی‌ها
+- بررسی فرمت و الگوریتم ریاضی کد ملی ایرانی
+- بررسی دقیق طول ۱۰ رقمی
+- تأیید رقم کنترل
+- جلوگیری از الگوهای نامعتبر رایج (مانند ارقام تکراری)
+
+### نحوه استفاده
+```dart
+import 'package:national_code_validator/national_code_validator.dart';
+
+void main() {
+  String nationalCode = "0123456789";
+  bool isValid = NationalCodeValidator.isValid(nationalCode);
+  print(isValid); // true یا false برمی‌گرداند
+}
 ```
 
 ## Additional information
